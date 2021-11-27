@@ -67,5 +67,6 @@ class CityListTest {
         CityList cityList = mockCityList();
         cityList.deleteCity(mockCity());
         assertTrue(!cityList.getCities().contains(mockCity()));
+
     }
 }
