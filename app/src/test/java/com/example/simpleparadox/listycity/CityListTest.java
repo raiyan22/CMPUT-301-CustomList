@@ -55,4 +55,10 @@ class CityListTest {
         assertEquals(0, mockCity().compareTo(cityList.getCities().get(1)));
     }
 
+    @Test
+    void testCountCities(){
+        CityList cityList = mockCityList();
+        assertEquals(1, cityList.countCities());
+    }
+
 }
