@@ -13,6 +13,8 @@ import java.util.Arrays;
 
 // solved the gradle issue
 // https://stackoverflow.com/questions/43511772/android-studio-connection-reset-error
+// solved http proxy issue
+// Unknown host 'No such host is known (dl.google.com)'. You may need to adjust the proxy settings in Gradle.
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i=0;i<cities.length;i++){
             cityDataList.add((new City(cities[i], provinces[i])));
-
+            System.out.println(cityDataList);
         }
 
         cityAdapter = new CustomList(this, cityDataList);

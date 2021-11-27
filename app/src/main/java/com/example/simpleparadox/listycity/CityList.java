@@ -33,4 +33,31 @@ public class CityList {
         return list;
     }
 
+
+    /**
+     * Return the size of city list
+     * @return
+     *      size of city list
+     */
+    public int countCities(){
+        return cities.size();
+    }
+
+
+    /**
+     * delete a city object from the list if exists, else throw an exception
+     * @param city
+     *      This is a candidate city to be deleted if exists in the list
+     */
+    public void deleteCity(City city){
+        try{
+            cities.remove(city);
+        }
+        catch (Exception exp){
+            System.out.println("Exception : " + exp.toString() );
+        }
+    }
+
+
+
 }
